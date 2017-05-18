@@ -70,7 +70,7 @@ void BankingSystem::addCustomer(const int customerId, const string firstName, co
                 cout<<"Customer "<<customerId<<" has been added"<<endl;
                 return;
             }
-            //insert into before head with 1 noded ll
+            //insert into before head
             else if(cur == headCust && lastName<cur->customer->lastName){
                 CustNode *newNode = new CustNode;
                 newNode->customer = newCustomer;
